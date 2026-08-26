@@ -12,30 +12,37 @@ while opcion != 5:
         3.Calcular progreso
         4.Buscar ejercicio
         5.Salir""")
+    while True:
+        try:
 #Se creo la opcion 1 donde el cliente puede agregar el ejercicio deseado y se guarda en la lista creada anteriormente 
-    opcion = int(input("Elije una opcion: "))
+            opcion = int(input("Elije una opcion: "))
+            break
+        except ValueError:
+            print('Debes ingresar un numero')
     if opcion == 1:
         ejercicio = {
-            'nombre': input('Que ejercicio desea agregar: '),
-            'series': int(input('Cuantas series son: ')),
-            'repeticiones': int(input('Cuantas repeticiones son: '))
-        }
+                'nombre': input('Que ejercicio desea agregar: '),
+                'series': int(input('Cuantas series son: ')),
+                'repeticiones': int(input('Cuantas repeticiones son: '))
+            }
         ejercicios.append(ejercicio)
         print('Ejercicios arreglados correctamente')
     elif opcion == 2:
-        print('==Historial semanal==')
-        if len(ejercicios) == 0:
-            print("Todavia no has hagregado ejercicios")
-        else:
-            for ejercicio in ejercicios:
-                print('-------------------------') 
-                print('Ejercicio:', ejercicio['nombre'])
-                print('Series:', ejercicio['series'])
-                print('Repeticion:', ejercicio['repeticiones'])   
+            print('==Historial semanal==')
+            if len(ejercicios) == 0:
+                print("Todavia no has hagregado ejercicios")
+            else:
+                for ejercicio in ejercicios:
+                    print('-------------------------') 
+                    print('Ejercicio:', ejercicio['nombre'])
+                    print('Series:', ejercicio['series'])
+                    print('Repeticion:', ejercicio['repeticiones'])   
     elif opcion == 3:
         print('en proceso')
     elif opcion == 4:
-        print('en proceso')
+            print('en proceso')
     elif opcion == 5:
         print('Saliendo...')
+    else: 
+        print('opcion no valida...')
 print('Gracias por utilizar el sistema')
