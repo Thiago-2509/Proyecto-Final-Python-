@@ -5,12 +5,12 @@ Smart Training es un sistema desarrollado en Python pensado para personas que es
 El sistema permite llevar un registro sencillo de los ejercicios realizados durante la semana y consultar el progreso del usuario. Está diseñado para funcionar desde la consola, utilizando un menú interactivo fácil de entender y utilizar.
 El proyecto fue desarrollado como entregable final para la clase de Python del SENA, con el objetivo de aplicar conceptos de programación como variables, listas, ciclos, condicionales, funciones y manejo de datos.
 
-🚧 Estado del proyecto: En desarrollo.
+Estado del proyecto: Completado.
 
 ## Funcionalidades
 
 Menu interactivo compuesto de:
-- Dar la bienvenida al usuario 
+- Dar la bienvenida al usuario ✅  Completado
 - Agregar ejercicio del dia  ✅  Completado
 - Ver historial semanal ✅ Completado
 - Calcular progreso ✅ Completado
