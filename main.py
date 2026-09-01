@@ -127,4 +127,4 @@ while opcion != 5:
         print('Saliendo de Smart Training...')
     else:
         print('Opción no válida.')
-print('Programa finalizado.')
+print('Gracias por utilizar el programa.')
